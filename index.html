@@ -26,7 +26,8 @@
              data-height="500"
              data-theme="light"
              data-chrome="noheader nofooter noborders transparent"
-             href="https://twitter.com/ppsdmkebtke?ref_src=twsrc%5Etfw">
+             href="https://twitter.com/ppsdmkebtke">
+             Tweet oleh PPSDM KEBTKE
           </a>
         </div>
       </div>
@@ -68,10 +69,13 @@
 </div>
 
 <footer class="text-center mt-3 text-muted">
-  <p>&copy; <?php echo date('Y'); ?> PPSDM KEBTKE - Kementerian ESDM</p>
+  <p>&copy; <span id="year"></span> PPSDM KEBTKE - Kementerian ESDM</p>
 </footer>
 
-<!-- Script Twitter -->
+<!-- Script Tahun dan Twitter -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
